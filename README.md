@@ -12,23 +12,68 @@ I'm a computer science student and full-stack software engineer. I specialize in
 
 ## 🚀 Featured Projects
 
-### **AlamX (AI Wellness Companion)**
-A premium, full-stack lifestyle and health application that calculates dynamic health scores. 
-* **Architecture:** React frontend styled with a custom "Premium Light Wellness" CSS-first theme, backed by a FastAPI and SQLite backend.
-* **ML Integration:** Features an integrated Scikit-Learn and XGBoost scoring engine that evaluates 132-parameter symptom vectors alongside daily habits (nutrition, mindfulness, movement). 
-* **Highlights:** Engineered a monotonic scoring algorithm (clinical baseline + engagement points) and utilized `predict_proba` for highly accurate, explainable diagnostic predictions.
+# 🌿 AlamX: AI-Driven Wellness & Diagnostic Platform
 
-### **Ephemeral Group Workspaces**
-A streamlined platform for temporary group coordination and task management.
-* **Architecture:** Built using Flutter Web for a highly responsive frontend, connected to a robust FastAPI backend.
-* **Highlights:** Designed around link-based, ephemeral event hubs that allow users to spin up and tear down collaboration spaces quickly.
+AlamX is a premium, full-stack health application that bridges predictive machine learning with daily habit tracking. It features a custom monotonic scoring algorithm, real-time universal state synchronization, and a predictive diagnostic engine built on XGBoost. 
 
-### **Power Electronics Simulation**
-* **Scope:** Designed and simulated a three-phase inverter for a 300V battery pack using SPWM techniques.
-* **Highlights:** Conducted rigorous simulation analysis in MATLAB Simulink, focusing on Total Harmonic Distortion (THD), voltage waveforms, and output frequency justification.
+Designed with a "Premium Light Wellness" CSS-first architecture, AlamX moves beyond static dashboards to provide a highly interactive, clinically grounded user experience.
 
-## 🎨 UI/UX & Creative
-Beyond standard engineering, I place a heavy emphasis on design and brand identity. I actively work on UI/UX aesthetics—from modern, high-contrast minimalist app themes to vector-crisp logo design and retro-cinematic graphic styling.
+## 🚀 Key Engineering Features
+
+### 1. Monotonic Health Scoring Engine (80/20 Architecture)
+A mathematically rigorous scoring engine designed to ensure that logging healthy behavior strictly rewards the user without breaking consistency.
+*   **Clinical Baseline (80 Points):** Evaluates strictly graded vitals (Heart Rate, Blood Pressure), BMI, Sleep duration, and active symptom penalties.
+*   **Engagement Bonus (20 Points):** A dynamic pool rewarding daily habits (Steps, Hydration, Mindfulness, Nutrition). 
+*   **Macro Balance Algorithm:** Nutrition scoring splits into per-macro attainment (capped at user targets) plus a balance modifier, penalizing lopsided diets (e.g., 200% carbs, 10% protein) without violating monotonic, non-decreasing principles.
+*   **Predictive Trajectory:** Calculates a projected End-Of-Day score based on the clinical baseline and remaining scheduled wellness targets.
+*   **Rolling Consistency Multiplier:** Awards a +2 point buffer for maintaining >80% habit completion over a rolling 5-day streak.
+
+### 2. XGBoost Diagnostic AI
+*   **Predictive Engine:** Transitioned from Random Forest to XGBoost (99.64% accuracy) evaluating a 132-parameter symptom vector space.
+*   **Confidence & Explainability:** Utilizes `predict_proba` to deliver distinct percentage-based match confidences and alternative condition runners-up.
+*   **Clinical Descriptions:** Maps 41 target diseases to localized, readable clinical descriptions for immediate user context.
+
+### 3. Universal State Synchronization & Dynamic UI
+*   **On-Demand Targets:** Users can dynamically configure precise daily targets (e.g., 8,000 steps, 2.5L water) which instantly dictate the math across the Dashboard, Wellness Plan, and Scoring Engine.
+*   **Real-Time Data Flow:** Eliminates client-side state illusions. Vitals and habits are directly persisted to the SQLite backend and instantly reflected across all UI components via a centralized React context.
+
+### 4. Robust Security & Auth
+*   **JWT Architecture:** Implements stateless JWT authentication via `python-jose` and `passlib/bcrypt` password hashing.
+*   **Stateless Invalidation:** Engineered a database-backed `token_version` system to successfully implement "Log Out Everywhere" functionality, allowing immediate invalidation of stateless tokens across all devices.
+*   **Route Protection:** Enforces strict per-user data isolation at the API boundary and client-side route guarding.
+
+## 🛠 Tech Stack
+
+**Frontend**
+*   React, Vite, TypeScript
+*   Tailwind CSS (v4 CSS-first architecture)
+*   Recharts (Dual-axis historical data visualization)
+*   Custom SVG vector implementations (Zero-font-dependency icons)
+
+**Backend & ML Engine**
+*   FastAPI (Asynchronous Python REST API)
+*   SQLite (Strict separation of `User_Profile` baselines and `Daily_Health_Log` timeseries)
+*   Scikit-Learn & XGBoost
+
+## ⚙️ Local Development Setup
+
+### Backend (FastAPI)
+```bash
+# Navigate to backend directory
+cd SukhiX_backend
+
+# Activate virtual environment
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+pip install "pydantic[email]"
+
+# Setup environment variables
+echo 'JWT_SECRET_KEY="your_generated_32_byte_secret"' > .env
+
+# Run the server
+uvicorn main:app --port 8000
 
 ## 📫 Let's Connect
 
