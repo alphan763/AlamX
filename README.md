@@ -32,9 +32,7 @@ Beyond standard engineering, I place a heavy emphasis on design and brand identi
 
 ## 📫 Let's Connect
 
-* **LinkedIn:** [Link to your profile]
-* **Portfolio/Website:** [Link to your site]
-* **Email:** [Your email address]
-
+* **LinkedIn:** [https://www.linkedin.com/feed/]
+* **Email:** [hamidalam763@gmail.com]
 ---
 ⭐️ *Always building, learning, and refining.*
