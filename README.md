@@ -55,6 +55,9 @@ A mathematically rigorous scoring engine designed to ensure that logging healthy
 *   SQLite (Strict separation of `User_Profile` baselines and `Daily_Health_Log` timeseries)
 *   Scikit-Learn & XGBoost
 
+* **LinkedIn:** [https://www.linkedin.com/feed/]
+* **Email:** [hamidalam763@gmail.com]
+
 ## ⚙️ Local Development Setup
 
 ### Backend (FastAPI)
@@ -77,7 +80,4 @@ uvicorn main:app --port 8000
 
 ## 📫 Let's Connect
 
-* **LinkedIn:** [https://www.linkedin.com/feed/]
-* **Email:** [hamidalam763@gmail.com]
----
 ⭐️ *Always building, learning, and refining.*
