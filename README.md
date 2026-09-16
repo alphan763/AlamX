@@ -32,7 +32,7 @@ A mathematically rigorous scoring engine designed to ensure that logging healthy
 *   **Predictive Engine:** Transitioned from Random Forest to XGBoost (99.64% accuracy) evaluating a 132-parameter symptom vector space.
 *   **Confidence & Explainability:** Utilizes `predict_proba` to deliver distinct percentage-based match confidences and alternative condition runners-up.
 *   **Clinical Descriptions:** Maps 41 target diseases to localized, readable clinical descriptions for immediate user context.
-
+*   
 ### 3. Universal State Synchronization & Dynamic UI
 *   **On-Demand Targets:** Users can dynamically configure precise daily targets (e.g., 8,000 steps, 2.5L water) which instantly dictate the math across the Dashboard, Wellness Plan, and Scoring Engine.
 *   **Real-Time Data Flow:** Eliminates client-side state illusions. Vitals and habits are directly persisted to the SQLite backend and instantly reflected across all UI components via a centralized React context.
