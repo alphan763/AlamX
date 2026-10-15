@@ -10,8 +10,8 @@
 │        BUILDING INTELLIGENT SOFTWARE SYSTEMS                 │
 │                                                              │
 │        AI  ×  DATA  ×  BACKEND  ×  PRODUCT                   │ 
-│                                                              │ 
-╰──────────────────────────────────────────────────────────────╯    
+│                                                              │
+╰──────────────────────────────────────────────────────────────╯
 ```
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=8B949E&center=true&vCenter=true&width=760&lines=Full-Stack+Developer;AI%2FML+Engineer;Building+data-driven+products;Learning+%E2%86%92+Building+%E2%86%92+Shipping" />
