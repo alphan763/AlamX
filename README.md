@@ -9,7 +9,7 @@
 │                                                              │
 │        BUILDING INTELLIGENT SOFTWARE SYSTEMS                 │
 │                                                              │
-│        AI  ×  DATA  ×  BACKEND  ×  PRODUCT                   │
+│        AI  ×  DATA  ×  BACKEND  ×  PRODUCT                   │ 
 │                                                              │ 
 ╰──────────────────────────────────────────────────────────────╯    
 ```
