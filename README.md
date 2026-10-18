@@ -1,6 +1,6 @@
 <div align="center">
 
-# HAMID ALAM
+# HAMID ALAM 
 
 ### AI/ML · FULL-STACK · SOFTWARE ENGINEERING
 
